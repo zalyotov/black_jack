@@ -1,13 +1,15 @@
 class User
-  attr_accessor :money
-  attr_reader :type, :name
+  attr_accessor :bank, :count
+  attr_reader :type, :name, :cards
 
   def initialize(*name)
     @name = name
-    @money = 100
+    @cards = []
+    @count = 0
   end
 
   def give_money(bet)
-    @money -= bet if @money >= 10
+    @bank -= bet if @bank >= bet
+    bet
   end
 end

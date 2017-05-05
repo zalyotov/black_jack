@@ -14,6 +14,8 @@ class Deck
     deck.delete_at(0)
   end
 
+  alias take_card delete_card
+
   private
 
   def shuffle_deck
