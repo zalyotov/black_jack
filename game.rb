@@ -14,16 +14,16 @@ class Game
   end
 
   def take_bank
-    self.bank += self.player.give_money(bet)
-    self.bank += self.dealer.give_money(bet)
+    self.bank += player.give_money(bet)
+    self.bank += dealer.give_money(bet)
   end
 
   def dealer
-    players["Dealer"]
+    players['Dealer']
   end
 
   def player
-    players["Player"]
+    players['Player']
   end
 
   def counter(cards)
